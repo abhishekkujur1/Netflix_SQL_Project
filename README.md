@@ -1,4 +1,4 @@
-# Netflix Movies And TV Shows Data Ananlysis Using SQL
+# Netflix Movies and TV Shows Data Analysis using SQL
 
 ![](https://github.com/najirh/netflix_sql_project/blob/main/logo.png)
 
@@ -44,9 +44,12 @@ CREATE TABLE netflix
 ### 1. Count the Number of Movies vs TV Shows
 
 ```sql
-SELECT type , COUNT(*) AS total_shows
+SELECT 
+    type,
+    COUNT(*)
 FROM netflix
-GROUP BY type;
+GROUP BY 1;
+```
 
 **Objective:** Determine the distribution of content types on Netflix.
 
@@ -261,4 +264,5 @@ GROUP BY category;
 - **Content Categorization:** Categorizing content based on specific keywords helps in understanding the nature of content available on Netflix.
 
 This analysis provides a comprehensive view of Netflix's content and can help inform content strategy and decision-making.
+
 
